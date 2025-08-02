@@ -24,6 +24,7 @@
         description: "IAM role created using Ansible"
         managed_policy:
           - arn:aws:iam::aws:policy/AmazonEC2ReadOnlyAccess
+          - arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess
       register: iam_role_result
 
     - name: Output IAM role info
